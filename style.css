@@ -1,0 +1,289 @@
+title {
+    background-color: #0c0303;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: black;
+}
+
+body {
+    background-color: #eaeced; 
+}
+
+.btn:hover {
+    background-color: #A2877D; 
+    transform: scale(1.1); 
+}
+
+
+
+.image1style{
+    width: 160px;
+    height: 60px;
+    margin-left: 15px
+}
+
+.nav_background{
+    background-color: #375F67 !important;
+}
+
+
+
+.group12{
+    height: 535px;
+    width: 103%;
+    background-image: url('src/images/Group12.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.font1{
+    font-size: 75px;
+    font-weight: 700;
+    color: #B89C53;
+}
+
+.font20{
+    font-size: 20px;
+}
+
+.font45{
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.component1{
+    width: 100%;
+    /* height: 1010px; */
+    /* padding-bottom: 20px; */
+    background-color: white;
+}
+
+
+.component2{
+    width: 100%;
+    background-color: white;
+    /* background-image: url('src/images/flower.png'); */
+    /* background-size: 50% 50% cover;
+    background-position: center center; */
+}
+
+.component3{
+    width: 100%;
+    /* background-color: white; */
+}
+
+.component4{
+    width: 100%;
+    /* background-color: white; */
+}
+
+.component5{
+    width: 100%;
+    background-color: white;
+    /* background-image: url('src/images/flower.png'); */
+    /* background-repeat: no-repeat; */
+}
+
+.component6{
+    width: 100%;
+    background-color: white;
+}
+
+.component17{
+    width: 100%;
+    background-color: white;
+    background-image: url('src/images/pngwing 6.png');
+    background-size: 50% 50% cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.component18{
+    width: 100%;
+    background-color: white;
+    background-image: url('src/images/pngwing 4.png');
+    background-size: 60%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.component99{
+    background-color: #375F67;
+}
+
+
+.font15{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.containerbox{ 
+    background-color: white;
+    border-radius: 20px; 
+    width: 100%; 
+    border: 1px solid #95BFCB;
+    cursor: pointer;
+}
+
+.feedbach1{
+    height: 30%; 
+    width: 80%; 
+    margin: 120px 15px 10px 0px;
+}
+
+.feedbach2{
+    height: 30%; 
+    width: 80%; 
+    margin: 55px 15px 10px 70px;
+}
+
+.feedbach3{
+    height: 30%; 
+    width: 80%; 
+    margin: 20px 15px 10px 0px;
+}
+
+.feedbach4{
+    height: 30%; 
+    width: 80%; 
+    margin: 80px 15px 10px 125px;
+}
+
+
+.appButton {
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+
+    border: none;
+}
+   
+.white{
+    color: #FFFF !important;
+}
+
+
+
+
+@media (max-width: 1025px) {
+    .font45{
+        font-size: 35px;
+    }
+}
+
+
+
+
+
+@media (max-width: 992px){
+    .feedbach3{
+        
+        margin: -18px 0px 15px 0px;
+    }
+    
+    .feedbach4{
+        margin-top: 35px;
+    }
+}
+
+@media (max-width: 767px) {
+   
+    .feedbach1{
+        height: 45%; 
+        margin: 0px 0px 15px 0px;
+    }
+    
+    .feedbach2{
+        height: 45%; 
+        margin: 0px;
+    }
+    
+    .feedbach3{
+        height: 45%; 
+        margin: 0px 0px 15px 0px;
+    }
+    
+    .feedbach4{
+        height: 45%; 
+        margin: 0px;
+        margin-top: 35px;
+    }
+    .abountBtn{
+        margin-bottom: 4px;
+    }
+
+    .service-cutom{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+}
+
+@media (max-width: 500px){
+    .feedbach1{
+        height: 45%; 
+        margin-bottom: 16px;
+        width: 100%;
+    }
+    .feedbach1 .des{
+        font-size: 10px;
+    }
+
+
+    .feedbach2{
+        height: 45%; 
+        margin-bottom: 16px;
+        width: 100%;
+    }
+    .feedbach2 .des{
+        font-size: 10px;
+    }
+
+    .feedbach3{
+        height: 45%; 
+        margin-bottom: 16px;
+        width: 100%;
+    }
+    .feedbach3 .des{
+        font-size: 10px;
+    }
+
+    .feedbach4{
+        height: 45%; 
+        margin-bottom: 16px;
+        margin-top: 33px;
+        width: 100%;
+    }
+    .feedbach .des{
+        font-size: 10px;
+    }
+}
+
+
+
+@media (max-width: 426px) {
+
+    .group12{
+        height: 310px;
+    }
+
+    .font45{
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .font1{
+        font-size: 40px;
+    }
+    
+    .font20{
+        font-size: 15px;
+    }
+}
+
+.my-border{
+    border: 1px solid red;
+}
