@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="booking.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+	integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Tenmoons</title>
+   
+</head>
+<body>
+	
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-light normalnav nav_background">
+        <div class="container-fluid">
+            <div class="navbar-heading mt-2">
+               <div class="" style="max-width: 260px;">
+                <a class="navbar-h " href="/">
+                    <img src="src/images/logo-whit2.png" class="img-fluid">
+                </a>
+               </div>
+            </div>
+    
+            <button class="navbar-toggler mr-1" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto px-3" style="margin-right: 10%;">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-a-text me-3" href="./index.html" style="color: white;">Home</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link me-3 nav-link-a-text" style="color: white;">About Us</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link me-3 nav-link-a-text" style="color: white;">Services</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-a-text me-3" href="#" style="color: white;">Contact Us</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-a-text me-3" href="#" style="color: white;">Our Blog</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-a-text me-3" href="#" style="color: white;">Our Package</a>
+                    </li>
+                </ul>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+	<!-- calendar -->
+    <div class="console-schedular  mt-5">
+		<div class="schedular-filters">
+			
+
+			<div class="date-changer">
+				<a class="custom-btn prevDate" href="#" title=""><i class="fa fa-chevron-left"></i></a>
+				<input type="text" class="new-datepicker" />
+				<a class="custom-btn nextDate" href="#" title=""><i class="fa fa-chevron-right"></i></a>
+			</div><!-- Date Picker -->
+		</div> <!-- Schedular Filters -->
+
+		<div class="schedular-body">
+			
+
+			<div class="main-schedular">
+			<div class="grids">
+				<div class="grids-head">
+					<div class="timeslot"> 12:00 AM </div>
+					<div class="timeslot"> 01:00 AM </div>
+					<div class="timeslot"> 02:00 AM </div>
+					<div class="timeslot"> 03:00 AM </div>
+					<div class="timeslot"> 04:00 AM </div>
+					<div class="timeslot"> 05:00 AM </div>
+					<div class="timeslot"> 06:00 AM </div>
+					<div class="timeslot"> 07:00 AM </div>
+					<div class="timeslot"> 08:00 AM </div>
+					<div class="timeslot"> 09:00 AM </div>
+					<div class="timeslot"> 10:00 AM </div>
+					<div class="timeslot"> 11:00 AM </div>
+					<div class="timeslot"> 12:00 PM </div>
+					<div class="timeslot"> 01:00 PM </div>
+					<div class="timeslot"> 02:00 PM </div>
+					<div class="timeslot"> 03:00 PM </div>
+					<div class="timeslot"> 04:00 PM </div>
+					<div class="timeslot"> 05:00 PM </div>
+					<div class="timeslot"> 06:00 PM </div>
+					<div class="timeslot"> 07:00 PM </div>
+					<div class="timeslot"> 08:00 PM </div>
+					<div class="timeslot"> 10:00 PM </div>
+					<div class="timeslot"> 11:00 PM </div>
+					<div class="timeslot"> 12:00 AM </div>
+				</div>
+				<div class="grids-body">
+
+					<!-- <div class="ride resize butNotHere maintenance" style="width: 202px; left: 102px; top: 184px">
+						<div class="other-info">
+							<i class="ion-settings"></i>
+							<span>Maintenance</span>
+						</div>
+					</div>
+
+					<div class="ride resize butNotHere return" style="width:304px; left: 510px; top:93px;">
+						<div class="other-info">
+							<i class="ion-arrow-return-left"></i>
+							<span>Return To Base</span>
+						</div>
+					</div>
+
+					<div class="ride resize butNotHere" style="width:304px">
+						<div class="passenger-info complete-add scrolly">
+							<ul>
+								<li><i class="ion-ios-location-outline"></i> Estate of Jane Meriweather C/O Hawaiian Trust Company Honolulu, HI 96801-1234</li>
+							</ul>
+						</div>
+						<div class="passenger-info scrolly">
+							<ul>
+								<li><i class="ion-android-person"></i> <strong class="pass-name">Mr. John Smith</strong></li>
+								<li><i class="ion-ios-telephone-outline"></i> <span class="pass-contact">718-444-665</span></li>
+								<li><a class="show-add" href="#" title=""> <i class="ion-ios-location-outline"></i> <span class="pass-loc">Estate of Jane Meriweather C/O Hawaiian Trust Company Honolulu, HI 96801-1234</span></a></li>
+							</ul>
+						</div>
+						<div class="assign-driver">
+							<span>Driver Not Assigned</span>
+							<a class="custom-btn" data-toggle="modal" data-target="#assign-driver" href="#" title=""><i class="ion-android-person-add"></i> Assign Driver</a>
+						</div>
+					</div>
+
+					<div class="ride resize butNotHere assigned" style="left: 204px; top: 93px; width:202px">
+						<div class="passenger-info complete-add scrolly">
+							<ul>
+								<li><i class="ion-ios-location-outline"></i> 422 Street, Main Boulevard</li>
+							</ul>
+						</div>
+						<div class="passenger-info scrolly">
+							<ul>
+								<li><i class="ion-android-person"></i> <strong class="pass-name">Mr. Martin Bros</strong></li>
+								<li><i class="ion-ios-telephone-outline"></i> <span class="pass-contact">574-333-589</span></li>
+								<li><a class="show-add" href="#" title=""> <i class="ion-ios-location-outline"></i> <span class="pass-loc">422 Street, Main Boulevard</span></a></li>
+							</ul>
+						</div>
+						<div class="driver-info">
+							<ul>
+								<li><img src="https://picsum.photos/100/100"> <i class="ion-android-person"></i> <strong class="driver-name">John Smith</strong></li>
+								<li><i class="ion-ios-clock-outline"></i> <span><i class="hr">02</i>:<i class="mins">02</i>Hours</span></li>
+							</ul>
+						</div>
+					</div> -->
+
+					<div class="grids-row">
+						<div class="timeslot"> + </div>
+						<div class="timeslot"> + </div>
+						<div class="timeslot"> + </div>
+						<div class="timeslot"> + </div>
+						<div class="timeslot"> + </div>
+						<div class="timeslot"> + </div>
+						<div class="timeslot"> + </div>
+						<div class="timeslot"> + </div>
+						<div class="timeslot"> + </div>
+						<div class="timeslot"> + </div>
+						<div class="timeslot"> + </div>
+						<div class="timeslot"> + </div>
+						<div class="timeslot"> + </div>
+						<div class="timeslot"> + </div>
+						<div class="timeslot"> + </div>
+						<div class="timeslot"> + </div>
+						<div class="timeslot"> + </div>
+						<div class="timeslot"> + </div>
+						<div class="timeslot"> + </div>
+						<div class="timeslot"> + </div>
+						<div class="timeslot"> + </div>
+						<div class="timeslot"> + </div>
+						<div class="timeslot"> + </div>
+						<div class="timeslot"> + </div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div><!-- Schedular Body -->
+	</div>
+
+
+	<!-- packegs -->
+    <div class="component8">
+        <div class="container pt-5 pb-3">
+           
+            <div class="row justify-content-center pb-5 mt-5">
+               
+                <div class="col-md-6 col-lg-4 pb-3">
+                    <!-- Add a style="height: XYZpx" to div.card to limit the card height and display scrollbar instead -->
+                    <div
+                      class="card card-custom bg-white border-white border-0 bottom-1"
+                      style="height: 450px"
+                    >
+                      <div
+                        class="card-custom-img"
+                        style="
+                          background-image: url(src/images/pack1.png);
+                          /* background-position: top; */
+                        "
+                      ></div>
+                      <div class="card-custom-avatar">
+                        <img
+                          class="img-fluid"
+                          src="src/images/dolor.png"
+                          alt="Avatar"
+                        />
+                      </div>
+                      <div class="card-body" style="overflow-y: auto">
+                        <h4 class="card-title">10 Month 1:1 Coaching Package ($7250 total)
+                      </h4>
+                        <ul>
+                          <li>90 Minute introductory session</li>
+                          <li>40 Minute In-person sessions once a week (40 sessions total)</li>
+                          <li>24×7 support through voxer messaging</li>
+                        </ul>
+                      </div>
+                     
+                    </div>
+                </div>
+               
+                <div class="col-md-6 col-lg-4 pb-3">
+                    <!-- Add a style="height: XYZpx" to div.card to limit the card height and display scrollbar instead -->
+                    <div
+                      class="card card-custom bg-white border-white border-0 top-1"
+                      style="height: 450px"
+                    >
+                      <div
+                        class="card-custom-img"
+                        style="
+                          background-image: url(src/images/pack2.png);
+                        "
+                      ></div>
+                      <div class="card-custom-avatar">
+                        <img
+                          class="img-fluid"
+                          src="src/images/dolor.png"
+                          alt="Avatar"
+                        />
+                      </div>
+                      <div class="card-body" style="overflow-y: auto">
+                        <h4 class="card-title"> Group Coaching Sessions
+                      </h4>
+                        <ul>
+                          <li>120 minute quarterly group coaching for bio and/or resource parent(s) 
+                            ($150 per person)</li>
+                          <li>60 minute quarterly group coaching with peers 
+                            ($150 per person)</li>
+                          <li>60 minute 1:1  yoga + mindfulness activities:  
+                            ($75 per person) <span style="color: #1E464E; font-weight: 500;">*can be blended into 40 min coaching sessions above for no additional fee </span> </li>
+                          <li>90 minute monthly group yoga and mindfulness breathing workshops with peers 
+                            ($50 per person) 
+                            <span style="color: #1E464E; font-weight: 500;">*weekends only </span> </li>
+                          <li>90 minute quarterly family yoga workshops: bio, resource or both family yoga experience 
+                            ($100 per family) 
+                            <span style="color: #1E464E; font-weight: 500;">*10 people max per group</span></li>
+                        </ul>
+                      </div>
+                      <div
+                        class="card-footer"
+                        style="background: inherit; border-color: inherit"
+                      >
+                     
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 pb-3">
+                    <!-- Add a style="height: XYZpx" to div.card to limit the card height and display scrollbar instead -->
+                    <div
+                      class="card card-custom bg-white border-white border-0 bottom-1"
+                      style="height: 450px"
+                    >
+                      <div
+                        class="card-custom-img"
+                        style="
+                          background-image: url(src/images/pack3.png);
+                        "
+                      ></div>
+                      <div class="card-custom-avatar">
+                        <img
+                          class="img-fluid"
+                          src="src/images/dolor.png"
+                          alt="Avatar"
+                        />
+                      </div>
+                      <div class="card-body" style="overflow-y: auto">
+                        <h4 class="card-title">Monthly Continued Development package ($700 per month)
+                      </h4>
+                        <ul>
+                          <li>UThis is specifically for people who have completed a main program and wants to continue their development journey with our guidance. </li>
+                          <li>This package is a customized approach that is based on the unique requirements of each </li>
+                        </ul>
+                      </div>
+                      <div
+                        class="card-footer"
+                        style="background: inherit; border-color: inherit"
+                      >
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<!-- footer -->
+	<div class="component99 mt-5">
+
+        <div class="container mb-5">
+
+            <div class="row mb-5">
+                <div class="col-md-6 mt-5">
+                    <img src="src/images/logo-white3.png"  class="img-fluid">
+                </div>
+
+                <div class="col-md-6 mt-5" style="text-align: end;">
+                    <img src="src/images//Icon.png">
+                </div>
+
+                <div class="mt-5" style="color: antiquewhite;">
+                    <hr />
+                </div>
+            </div>
+        </div>
+
+        <div style="background-color: #1E464E; padding: 10px;" class="text-center">
+            <p style="color: white;">Copyright 2023. TenMoon.</p>
+
+        </div>
+    </div>
+
+	<div class="ride-menu new-ride">
+		<div class="menu-title">
+			<h4>New Appointment</h4>
+		</div>
+		<ul>
+			<li><a class="new-ride" data-toggle="modal" data-target="#add-new" href="#" title=""><i class="ion-model-s"></i> Add A New Appointment</a></li>
+			<li class="bordered"><a href="#" title="" style="color: rgb(223, 70, 70);"><i class="ion-android-cancel"></i> Cancel</a></li>
+		</ul>
+	</div><!-- New Ride Menu -->
+
+
+	<div class="ride-menu ride-opts">
+		<div class="ride-options">
+			<ul>
+				<li><a class="edit-ride" href="#" title=""><i class="ion-edit"></i> Edit Ride</a></li>
+				<li><a class="delete-ride" href="#" title=""><i class="ion-android-remove-circle"></i> Delete Ride</a></li>
+			</ul>
+		</div><!-- Ride Options -->
+	</div>
+
+
+
+<!-- New Ride  -->
+<div class="modal custom-modal" id="add-new">
+  <div class="modal-dialog">
+    <div class="modal-content">
+	<form class="custom-form" id="add-ride" name="Form">
+      <div class="modal-header">
+      	<div class="modal-title">
+	        <h4>New Appointment</h4>
+      	</div>
+      </div>
+
+      <div class="modal-body">
+			<div class="form-group row">
+				<label class="col-lg-5 col-md-12 col-form-label">Name</label>
+				<div class="col-lg-7 col-md-12">
+					<input id="pass-name" type="text" class="form-control" required>
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="col-lg-5 col-md-12  col-form-label">Mobile Number</label>
+				<div class="col-lg-7 col-md-12">
+					<input id="pass-contact" type="text" class="form-control" required>
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="col-lg-5 col-md-12  col-form-label">Email</label>
+				<div class="col-lg-7 col-md-12">
+					<input type="text" id="pass-email" required></input>
+				</div>
+			</div>
+
+			
+			<p class="mt-3">I would like to inquire about:</p>
+			
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="serviceType" id="servicesRadio" value="services">
+				<label class="form-check-label" for="servicesRadio">
+					Services
+				</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="serviceType" id="consultationRadio" value="consultation">
+				<label class="form-check-label" for="consultationRadio">
+					Consultation
+				</label>
+			</div>
+			<div class="form-check">
+				<label for="packageSelect">Select a Package:</label>
+				<select class="form-select shadow-none" id="packageSelect" name="package ">
+					<option value="basic"> 1:1 Coaching Package</option>
+					<option value="standard">Group Coaching Sessions</option>
+					<option value="premium">Monthly Continued Development package</option>
+					<!-- Add more options as needed -->
+				</select>
+			</div>
+
+			<p class="mt-3">I am a:</p>
+                            
+            <div class="form-check">
+				<input class="form-check-input" type="radio" name="clientType" id="governmentRadio" value="government">
+				<label class="form-check-label" for="governmentRadio">
+					Government Official
+				</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" name="clientType" id="privateClientRadio" value="private">
+				<label class="form-check-label" for="privateClientRadio">
+					Private Client
+				</label>
+			</div>  
+			
+			<p>Any additional information you'd like us to know about:</p>
+			
+
+			
+      </div>
+
+      <div class="modal-footer">
+        <button class="custom-btn ride-cancel color2"><i class="ion-android-cancel"></i> Cancel Appointment</button>
+        <button class="custom-btn add-ride-btn" type="submit"><i class="ion-android-add-circle"></i> Add A Appointment</button>
+        <button class="custom-btn hidden edit-ride-btn" type="submit"><i class="ion-android-add-circle"></i> Edit Appointment</button>
+      </div>
+	</form>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+    
+   
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
+    <script src="booking.js"></script>
+	<script src="blogPage/assets/js/bootstrap.min.js"></script>
+
+</body>
+</html>

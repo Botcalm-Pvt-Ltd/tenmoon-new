@@ -1,7 +1,7 @@
 ScrollReveal({
     
     reset: true,
-    distance: '70px',
+    distance: '50px',
     duration: 2000,
     delay: 200,
     // easing: 'ease-in',
@@ -31,27 +31,18 @@ ScrollReveal().reveal('.right-1', { origin: 'right',delay:50 ,distance:'50px'});
 ScrollReveal().reveal('.left-2', { origin: 'left',delay:100 ,distance:'50px'});
 ScrollReveal().reveal('.right-2', { origin: 'right',delay:150 ,distance:'50px'});
 
+ScrollReveal().reveal('.bottom-1', { origin: 'bottom',delay:0 ,distance:'80px'});
+ScrollReveal().reveal('.top-1', { origin: 'top',delay:150 ,distance:'80px'});
 
 
-// ScrollReveal().reveal('.coatingTypes', { origin: 'top' });
 
-ScrollReveal().reveal('.ins1', { origin: 'left' });
-ScrollReveal().reveal('.ins2', { origin: 'left' });
+ScrollReveal().reveal('.feedbach1', { origin: 'left',delay:0 ,distance:'50px'});
+ScrollReveal().reveal('.feedbach2', { origin: 'left',delay:50 ,distance:'50px'});
 
-ScrollReveal().reveal('.ins3', { origin: 'right' });
-ScrollReveal().reveal('.ins4', { origin: 'right' });
-
-
-ScrollReveal().reveal('.package1', { origin: 'left' });
-ScrollReveal().reveal('.package3', { origin: 'right' });
-ScrollReveal().reveal('.package2', { origin: 'bottom' });
+ScrollReveal().reveal('.feedbach3', { origin: 'right',delay:100 ,distance:'50px'});
+ScrollReveal().reveal('.feedbach4', { origin: 'right',delay:150 ,distance:'50px' });
 
 
-ScrollReveal().reveal('.feedbach1', { origin: 'left' });
-ScrollReveal().reveal('.feedbach2', { origin: 'left' });
-
-ScrollReveal().reveal('.feedbach3', { origin: 'right' });
-ScrollReveal().reveal('.feedbach4', { origin: 'right' });
 
 
 ScrollReveal().reveal('.bog1', { origin: 'left' });
